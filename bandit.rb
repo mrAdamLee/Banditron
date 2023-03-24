@@ -16,8 +16,7 @@ class Banditron
       values.each_with_index.max[1]
     else 
       #pick a random arm from the the list of arms
-      rand(arms.size)
-    end 
+      rand(arms.size) 
     end
   end
 
