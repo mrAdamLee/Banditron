@@ -3,9 +3,10 @@ class Experiment
   #@@ is a class level variable, this allows  keeping track of all instances of array
   @@instances = []
 
-  def selc.create(name) 
+  def self.create(name) 
     e = Experiment.new(name: name)
     yield e
+    e.validate!
     e
   end
 
